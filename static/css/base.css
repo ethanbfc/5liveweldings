@@ -5,16 +5,23 @@ body {
 .main-navbar {
     background-color: #212529;
     font-family: 'Oswald';
-    font-size: 1.2rem;
+    font-size: 16px;
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.title {
+    font-size: 16px;
+    padding-left: 5px;
 }
 
 .nav-item {
-    font-family: Oswald;
-    text-transform: uppercase;
     display: inherit;
+    padding-inline: 8px;
 }
 
 .social-media-icon {
