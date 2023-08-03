@@ -1,0 +1,58 @@
+body {
+    background: rgb(245, 245, 245);
+}
+
+.main-navbar {
+    background-color: #212529;
+    font-family: 'Oswald';
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-item {
+    font-family: Oswald;
+    text-transform: uppercase;
+    display: inherit;
+}
+
+.social-media-icon {
+    display: inline;
+    padding-right: 8px !important;
+    text-decoration: none;
+    color: white;
+}
+
+.social-media-icon:hover {
+    color: grey;
+}
+
+/* Footer */
+.footer {
+    background-color: #212529;
+}
+
+.footer-icons {
+    display: inherit;
+    padding-bottom: 0.5rem;
+}
+
+.footer-top {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    padding-left: 0.5rem;
+}
+
+.footer-top:hover {
+    color: grey;
+}
+
+/* Media */
+@media (max-width: 992px) {
+    .lg-hide {
+        display: none;
+    }
+}
