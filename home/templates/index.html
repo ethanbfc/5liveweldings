@@ -11,14 +11,79 @@
 {% block content %}
 <!-- Main Container -->
 <div class="container p-3 m-0 border-0 main-container">
+
+    <!-- Introduction -->
     <div class="row">
-        <h1>Gates and Railings Specialists - Manchester</h1>
-        <h3>We design, supply and install gates and railings!</h3>
+        <div class="col-12 col-lg-4">
+            <img class="img-fluid" src="{% static '/images/index-introduction-left.jpg' %}" alt="Composite and steel gate">
+        </div>
+        <div class="col-12 col-lg-4 text-center">
+            <h1>GATES AND RAILINGS SPECIALISTS MANCHESTER</h1>
+            <p>Call or text for your FREE quotation: <b>07730 331530</b></p>
+        </div>
+        <div class="col-12 col-lg-4">
+            <img class="img-fluid" src="{% static '/images/index-introduction-right.jpg' %}" alt="Steel gate and railings">
+        </div>
     </div>
 
+    <!-- Description and Previous Work -->
     <div class="row">
+        <p>Welcome to 5liveweldings Ltd., the premier place for gates and railings in Manchester.</p>
         <h3>Check out some of our previous work:</h3>
-        <!-- Cards -->
     </div>
+
+    <div class="row justify-content-center">
+        <div class="col-sm-2 col-12">
+            <div class="card-group h-100">
+                <div class="card">
+                    <a href="#"><img src="{% static '/images/steel-gates-thumbnail.jpg' %}" class="img-fluid" alt="Steel Gates Thumbnail"></a>
+                    <div class="card-body text-center">
+                        <h3><a href="#" class="card-link">Steel Gates</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-12">
+            <div class="card-group h-100">
+                <div class="card">
+                    <a href="#"><img src="{% static '/images/composite-gates-thumbnail.jpg' %}" class="img-fluid" alt="Composite Gates Thumbnail"></a>
+                    <div class="card-body text-center">
+                        <h3><a href="#" class="card-link">Composite Gates</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-12">
+            <div class="card-group h-100">
+                <div class="card">
+                    <a href="#"><img src="{% static '/images/railings-thumbnail.jpg' %}" class="img-fluid" alt="Railings Thumbnail"></a>
+                    <div class="card-body text-center">
+                        <h3><a href="#" class="card-link">Railings</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-12">
+            <div class="card-group h-100">
+                <div class="card">
+                    <a href="#"><img src="{% static '/images/security-thumbnail.jpg' %}" class="img-fluid" alt="Security Thumbnail"></a>
+                    <div class="card-body text-center">
+                        <h3><a href="#" class="card-link">Security</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-12">
+            <div class="card-group h-100">
+                <div class="card">
+                    <a href="#"><img src="{% static '/images/steel-framed-treated-timber-infill-thumbnail.jpg' %}" class="img-fluid" alt="Steel Framed Treated Timber Infill Thumbnail"></a>
+                    <div class="card-body text-center">
+                        <h3><a href="#" class="card-link">Steel Framed Treated Timber Infill</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 {% endblock %}

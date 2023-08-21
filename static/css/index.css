@@ -1,4 +1,26 @@
 .main-container {
+    font-family: Open Sans, Arial, sans-serif;
     max-width: 100%;
-    font-family: Arial;
+    background-color: #212529;
+    color: white;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: #15171a;
+    border-radius: 0;
+}
+
+.card-link {
+    text-decoration: none;
+    color: white;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.card-link:hover {
+    color: rgb(160, 159, 159);
 }

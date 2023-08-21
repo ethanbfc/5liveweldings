@@ -3,8 +3,8 @@ body {
 }
 
 .main-navbar {
-    background-color: #212529;
-    font-family: 'Oswald';
+    background-color: #15171a;
+    font-family: Open Sans, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
 }
@@ -14,7 +14,7 @@ body {
     padding-bottom: 0px;
 }
 
-.title {
+.navbar-title {
     font-size: 16px;
     padding-left: 5px;
 }
@@ -37,7 +37,7 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #212529;
+    background-color: #15171a;
 }
 
 .footer-icons {
