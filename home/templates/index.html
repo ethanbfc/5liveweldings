@@ -26,14 +26,15 @@
         </div>
     </div>
 
-    <!-- Description and Previous Work -->
+    <!-- Description -->
     <div class="row">
         <p>Welcome to 5liveweldings Ltd., the premier place for gates and railings in Manchester.</p>
         <h3>Check out some of our previous work:</h3>
     </div>
 
+    <!-- Previous Work -->
     <div class="row justify-content-center">
-        <div class="col-sm-2 col-12">
+        <div class="col-xl-2 col-12">
             <div class="card-group h-100">
                 <div class="card">
                     <a href="#"><img src="{% static '/images/steel-gates-thumbnail.jpg' %}" class="img-fluid" alt="Steel Gates Thumbnail"></a>
@@ -43,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 col-12">
+        <div class="col-xl-2 col-12">
             <div class="card-group h-100">
                 <div class="card">
                     <a href="#"><img src="{% static '/images/composite-gates-thumbnail.jpg' %}" class="img-fluid" alt="Composite Gates Thumbnail"></a>
@@ -53,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 col-12">
+        <div class="col-xl-2 col-12">
             <div class="card-group h-100">
                 <div class="card">
                     <a href="#"><img src="{% static '/images/railings-thumbnail.jpg' %}" class="img-fluid" alt="Railings Thumbnail"></a>
@@ -63,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 col-12">
+        <div class="col-xl-2 col-12">
             <div class="card-group h-100">
                 <div class="card">
                     <a href="#"><img src="{% static '/images/security-thumbnail.jpg' %}" class="img-fluid" alt="Security Thumbnail"></a>
@@ -73,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 col-12">
+        <div class="col-xl-2 col-12">
             <div class="card-group h-100">
                 <div class="card">
                     <a href="#"><img src="{% static '/images/steel-framed-treated-timber-infill-thumbnail.jpg' %}" class="img-fluid" alt="Steel Framed Treated Timber Infill Thumbnail"></a>
@@ -85,5 +86,81 @@
         </div>
     </div>
 
+    <!-- Reviews -->
+    <div class="row">
+        <h1>Reviews</h1>
+        <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" data-interval="10000">
+                    <div class="col-sm-4 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h3>1</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="10000">
+                    <div class="col-sm-4 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h3>2</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="10000">
+                    <div class="col-sm-4 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h3>3</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="10000">
+                    <div class="col-sm-4 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h3>4</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="10000">
+                    <div class="col-sm-4 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h3>5</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#reviewsCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#reviewsCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+
 </div>
+
+<script>
+    // Script used for review carousel
+    let items = document.querySelectorAll('.carousel-item')
+
+    items.forEach((currentItem) => {
+        const minPerSlide = 3
+        let nextItem = currentItem.nextElementSibling
+        for (var i = 1; i < minPerSlide; i++) {
+            if (!nextItem) { nextItem = items[0] }
+            let cloneItem = nextItem.cloneNode(true)
+            currentItem.appendChild(cloneItem.children[0])
+            nextItem = nextItem.nextElementSibling
+        }
+    })
+</script>
 {% endblock %}
