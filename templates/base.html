@@ -12,7 +12,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
         <!-- Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'> <!-- remove if not used -->
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 
         <!-- CSS -->
@@ -38,22 +37,22 @@
                     <!-- Left Content-->
                     <ul class="navbar-nav me-auto mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="{% url 'home' %}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Steel Gates</a>
+                            <a class="nav-link" href="{% url 'steel-gates' %}">Steel Gates</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Composite Gates</a>
+                            <a class="nav-link" href="{% url 'composite-gates' %}">Composite Gates</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Railings</a>
+                            <a class="nav-link" href="{% url 'railings' %}">Railings</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Security</a>
+                            <a class="nav-link" href="{% url 'security' %}">Security</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Steel Framed Treated Timber Infill</a>
+                            <a class="nav-link" href="{% url 'steel-framed-treated-timber-infill' %}">Steel Framed Treated Timber Infill</a>
                         </li>
                     </ul>
                 </div>
