@@ -10,6 +10,18 @@
     height: auto;
 }
 
+.index-heading {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subsection-text {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
 .card {
     background-color: #15171a;
     border-radius: 0;
