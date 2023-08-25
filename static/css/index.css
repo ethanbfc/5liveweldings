@@ -25,6 +25,7 @@
 .card {
     background-color: #15171a;
     border-radius: 0;
+    margin-bottom: 0.75rem !important;
 }
 
 .card-link {
@@ -37,11 +38,11 @@
     color: rgb(160, 159, 159);
 }
 
+/* Carousel */
 .carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
     display: flex;
 }
 
-/* Media */
 @media (max-width: 575px) {
     .carousel-inner .carousel-item > div {
         display: none;
@@ -64,4 +65,11 @@
 
 .carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start { 
     transform: translateX(0);
+}
+
+/* Media */
+@media (min-width: 1199px) {
+    .card {
+        margin-bottom: 0rem !important; 
+    }
 }
