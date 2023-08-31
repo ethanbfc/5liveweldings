@@ -13,13 +13,31 @@
 .index-heading {
     font-weight: bolder;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-bottom: 0.5rem;
 }
 
-.subsection-text {
-    font-weight: bold;
-    font-size: 1.3rem;
+.index-description {
+    color: #bdbdbd;
+}
+
+.quotation-card-heading {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #ee2737;
+}
+
+.social-media-card-heading {
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.index-subheading {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .card {
@@ -68,8 +86,18 @@
 }
 
 /* Media */
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
+    .xl-show {
+        display: none;
+    }
+
     .card {
         margin-bottom: 0rem !important; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .xl-hide {
+        display: none;
     }
 }
