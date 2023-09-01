@@ -87,10 +87,6 @@
 
 /* Media */
 @media (min-width: 1200px) {
-    .xl-show {
-        display: none;
-    }
-
     .card {
         margin-bottom: 0rem !important; 
     }

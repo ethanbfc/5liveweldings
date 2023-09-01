@@ -47,14 +47,20 @@
 }
 
 /* Media */
-@media (min-width: 1200px) {
-    .xl-show {
+@media (max-width: 1200px) {
+    .xl-hide {
         display: none;
     }
 }
 
-@media (max-width: 1200px) {
-    .xl-hide {
+@media (min-width: 768px) {
+    .md-show {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .md-hide {
         display: none;
     }
 }
