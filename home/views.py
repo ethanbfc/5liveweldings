@@ -15,5 +15,5 @@ class RailingsView(TemplateView):
 class SecurityView(TemplateView):
     template_name = 'security.html'
 
-class SteelFramedTreatedTimberInfillView(TemplateView):
-    template_name = 'steel_framed_treated_timber_infill.html'
+class PowderCoatingView(TemplateView):
+    template_name = 'powder_coating.html'
