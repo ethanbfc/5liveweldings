@@ -1,10 +1,30 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}Powder Coating{% endblock %}
+
 {% block head %}
 
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="{% static 'css/product_pages.css' %}">
+
+<!-- SEO Tags - General -->
+<meta charset="utf-8">
+<meta name="og:title" property="og:title" content="Powder Coating">
+<meta property="og:type" content="website" />
+<meta name="og:description" content="We complete all of our powder coating in house, to ensure the highest quality finish at the most competitive prices!">
+<meta name="og:url" content="https://www.5liveweldings.com/powder-coating">
+<meta name="og:image" content="https://www.5liveweldings.com/static/images/powder-coating/thumbnail.jpg">
+<meta name="og:image:alt" content="Powder Coating Thumbnail">
+<meta property="og:locale" content="en_GB" />
+<meta property="og:site_name" content="5liveweldings Ltd." />
+
+<!-- SEO Tags - Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Powder Coating">
+<meta property="twitter:description" content="We complete all of our powder coating in house, to ensure the highest quality finish at the most competitive prices!">
+<meta name="twitter:image" content="https://www.5liveweldings.com/static/images/powder-coating/thumbnail.jpg">
+<meta name="twitter:site" content="https://www.5liveweldings.com">
 
 {% endblock %}
 
