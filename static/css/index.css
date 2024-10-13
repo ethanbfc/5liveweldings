@@ -61,6 +61,10 @@
     display: flex;
 }
 
+.carousel-rating {
+    color: gold
+}
+
 @media (max-width: 575px) {
     .carousel-inner .carousel-item > div {
         display: none;
