@@ -6,6 +6,9 @@ class HomeView(TemplateView):
 class SteelGatesView(TemplateView):
     template_name = 'steel_gates.html'
 
+class SingleCompositeGatesView(TemplateView):
+    template_name = 'single_composite_gates.html'
+
 class CompositeGatesView(TemplateView):
     template_name = 'composite_gates.html'
 
