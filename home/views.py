@@ -9,8 +9,8 @@ class SteelGatesView(TemplateView):
 class SingleCompositeGatesView(TemplateView):
     template_name = 'single_composite_gates.html'
 
-class CompositeGatesView(TemplateView):
-    template_name = 'composite_gates.html'
+class DoubleCompositeGatesView(TemplateView):
+    template_name = 'double_composite_gates.html'
 
 class RailingsView(TemplateView):
     template_name = 'railings.html'
