@@ -28,6 +28,11 @@
     color: #ee2737;
 }
 
+.whatsapp-button {
+    line-height: 2rem;
+    margin-bottom: 0px;
+}
+
 .social-media-card-heading {
     font-weight: bolder;
     font-size: 1rem;
