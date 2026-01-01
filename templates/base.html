@@ -95,7 +95,7 @@
                 <div class="container px-4 pt-3">
                     <div class="row">
                         <div class="col-6">
-                            <p>© 2025 - 5liveweldings Ltd.</p>
+                            <p>© <span id="copyright-year"></span> - 5liveweldings Ltd.</p>
                         </div>
                         <div class="col-6 text-end">
                             <li class="footer-icons">
@@ -121,3 +121,8 @@
             </footer>
         </section>
     </body>
+
+
+<script>
+    document.getElementById('copyright-year').appendChild(document.createTextNode(new Date().getFullYear()))
+</script>
